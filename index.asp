@@ -1,1 +1,1 @@
-<%response.redirect("site/")%>
+<%response.redirect("v2/")%>
