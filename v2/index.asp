@@ -17,10 +17,10 @@ StrTopo = StrTopo & "" & vbNewline
 
 response.write StrTopo
 
-'String SeguranÁa
+'String Seguran√ßa
 Application("fwsseg") = "fwshermeshagf87agsfqgwrgv67g"
 
-'FunÁıes
+'Fun√ß√µes
 Function formata(frase)
 	Temp = Split(LCase(frase)," ")
 	For i = LBound(Temp) to UBound(Temp)
@@ -46,7 +46,7 @@ Application("hlpage") = "inicio"
 end if
 Application("erroconfirm") = ""
 
-'Vari·veis
+'Vari√°veis
 nome = trim(formata(request.querystring("nome")))
 nometitular = trim(formata(request.querystring("nometitular")))
 endereco = trim(formata(request.querystring("endereco")))
@@ -109,7 +109,7 @@ str_total = str_total & request.querystring("str_total"& i) & "[]"
 end if
 next
 
-'AÁıes
+'A√ß√µes
 
 Select case Application("action")
 
@@ -119,7 +119,7 @@ if nome = "" then
 session("erro_nome") = "Digite seu nome!"
 Application("erroconfirm") = "erro"
 else
-session("erro_nome") = "Nome inv·lido!"
+session("erro_nome") = "Nome inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -127,10 +127,10 @@ session("erro_nome") = ""
 end if
 if endereco = "" or len(endereco) < 5 then
 if endereco = "" then
-session("erro_endereco") = "Digite o endereÁo!"
+session("erro_endereco") = "Digite o endere√ßo!"
 Application("erroconfirm") = "erro"
 else
-session("erro_endereco") = "EndereÁo inv·lido!"
+session("erro_endereco") = "Endere√ßo inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -141,7 +141,7 @@ if bairro = "" then
 session("erro_bairro") = "Digite o bairro!"
 Application("erroconfirm") = "erro"
 else
-session("erro_bairro") = "Bairro inv·lido!"
+session("erro_bairro") = "Bairro inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -152,7 +152,7 @@ if cep = "" then
 session("erro_cep") = "Digite o CEP!"
 Application("erroconfirm") = "erro"
 else
-session("erro_cep") = "CEP inv·lido!"
+session("erro_cep") = "CEP inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -163,7 +163,7 @@ if cidade = "" then
 session("erro_cidade") = "Digite a cidade!"
 Application("erroconfirm") = "erro"
 else
-session("erro_cidade") = "Cidade inv·lido!"
+session("erro_cidade") = "Cidade inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -171,10 +171,10 @@ session("erro_cidade") = ""
 end if
 if tel = "" or len(tel) < 10 or isnumeric(tel) = false then
 if tel = "" then
-session("erro_tel") = "Digite o n˙mero do seu telefone!"
+session("erro_tel") = "Digite o n√∫mero do seu telefone!"
 Application("erroconfirm") = "erro"
 else
-session("erro_tel") = "Telefone inv·lido!"
+session("erro_tel") = "Telefone inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -185,7 +185,7 @@ if email = "" then
 session("erro_email") = "Digite o e-mail!"
 Application("erroconfirm") = "erro"
 else
-session("erro_email") = "E-mail inv·lido!"
+session("erro_email") = "E-mail inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -278,43 +278,43 @@ end if
 next
 ElCpf = s
 if len(ElCpf) <> 11 then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "00000000000" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "11111111111" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "01234567890" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "22222222222" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "33333333333" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "44444444444" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "55555555555" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "66666666666" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "77777777777" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "88888888888" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "99999999999" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 elseif ElCpf = "12345678909" then
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 else
 Numero(1) = Cint(Mid(ElCpf,1,1))
@@ -346,24 +346,24 @@ end if
 if resultado2 = Numero(11) then
 session("erro_cpf") = ""
 else
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else 
-session("erro_cpf") = "CPF inv·lido!"
+session("erro_cpf") = "CPF inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 end if
 if ElCpf = "" then
-session("erro_cpf") = "Digite o n˙mero do seu CPF!"
+session("erro_cpf") = "Digite o n√∫mero do seu CPF!"
 Application("erroconfirm") = "erro"
 end if
 if id = "" or len(id) < 7 then
 if id = "" then
-session("erro_id") = "Digite o n˙mero do seu RG!"
+session("erro_id") = "Digite o n√∫mero do seu RG!"
 Application("erroconfirm") = "erro"
 else
-session("erro_id") = "RG inv·lido!"
+session("erro_id") = "RG inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -375,9 +375,9 @@ end if
 htmlemail = htmlemail & "<font face=Verdana color=""#000000""><strong>Cadastramento do Site:</strong></font>"
 htmlemail = htmlemail & "<BR><BR><font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Nome:</strong></font><br>"
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & nome & "</strong></font><br>"
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>EndereÁo:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Endere√ßo:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & endereco & "</strong></font><br>"
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>ReferÍncia para Entrega:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Refer√™ncia para Entrega:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & referencia & "</strong></font><br>"
 htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Bairro:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & bairro & "</strong></font><br>"
@@ -397,21 +397,21 @@ htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>(" & left(cel,2) & ") "&right(cel,8)&"</strong></font><br>"
 htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>E-mail:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & email & "</strong></font><br>"
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Estado CivÌl:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Estado Civ√≠l:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & civil & "</strong></font><br>"
 htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>CPF:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & cpf & "</strong></font><br>"
 htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Identidade:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & id & "</strong></font><br>"
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>”rg„o Expedidor:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>√ìrg√£o Expedidor:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & orgao & "</strong></font><br>"
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Tempo de ResidÍncia:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Tempo de Resid√™ncia:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & tresidencia & "</strong></font><br>"
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>SituaÁ„o da ResidÍncia:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Situa√ß√£o da Resid√™ncia:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & sresidencia & "</strong></font><br>"     
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Nome da M„e:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Nome da M√£e:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & nmae & "</strong></font><br>"     
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Data de Nascimento da M„e:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Data de Nascimento da M√£e:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & dmae & "</strong></font><br>"     
 htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Nome do Pai:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & npai & "</strong></font><br>"     
@@ -466,10 +466,10 @@ if not IsArray(vquant) then
     vunit = array(vunit)
 	vtotal = array(vtotal)
 end if
-	htmlemail = htmlemail & "<br /><font face=Verdana color=#000000><strong>InformaÁıes do Solicitante:</strong></font>"
+	htmlemail = htmlemail & "<br /><font face=Verdana color=#000000><strong>Informa√ß√µes do Solicitante:</strong></font>"
 	htmlemail = htmlemail & "<BR><BR><font color=#000000 face=Verdana, Arial size=2><strong>Nome:</strong></font><br>"
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & nome & "</font><br>"
-	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>EndereÁo: </strong></font><br>"	
+	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>Endere√ßo: </strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & endereco & "</font><br>"
 	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>Bairro:</strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & bairro & "</font><br>"
@@ -483,13 +483,13 @@ end if
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & cel & "</font><br><br>"
 	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>Forma de Pagamento:</strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & cartao & "</font><br>"
-	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>N˙mero do Cart„o:</strong></font><br>"	
+	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>N√∫mero do Cart√£o:</strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & numerocard & "</font><br>"
 	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>Cod. de Seguranca:</strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & codigoseg & "</font><br>"
 	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>Data de Validade:</strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & mes & "/" & ano & "</font><br>"
-	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>N˙mero de Parcelas:</strong></font><br>"	
+	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>N√∫mero de Parcelas:</strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & parcelas & "</font><br>"
 	htmlemail = htmlemail & "<font color=#000000 face=Verdana, Arial size=2><strong>Nome da Cliente:</strong></font><br>"	
 	htmlemail = htmlemail & "<font color=#333333 face=Verdana, Arial size=2>" & nometitular & "</font><br>"		
@@ -502,7 +502,7 @@ end if
 	htmlemail = htmlemail & "<table width=800 border=0 cellspacing=0 cellpadding=0>"
 	htmlemail = htmlemail & "<tr><td colspan=6 align=center>FORMUL&Aacute;RIO DE PEDIDOS DO SITE</td></tr>"
 	htmlemail = htmlemail & "<tr class=textonoticias2><td align=center bgcolor=#CCCCCC>Quant.</td><td align=center bgcolor=#CCCCCC>Refer&ecirc;ncia</td>"
-    htmlemail = htmlemail & "<td align=center bgcolor=#CCCCCC>Tamanho</td><td align=center bgcolor=#CCCCCC>DescriÁ„o</td><td align=center bgcolor=#CCCCCC>P&aacute;gina</td><td align=center bgcolor=#CCCCCC>Cor</td>"
+    htmlemail = htmlemail & "<td align=center bgcolor=#CCCCCC>Tamanho</td><td align=center bgcolor=#CCCCCC>Descri√ß√£o</td><td align=center bgcolor=#CCCCCC>P&aacute;gina</td><td align=center bgcolor=#CCCCCC>Cor</td>"
     htmlemail = htmlemail & "<td align=center bgcolor=#CCCCCC>Pre&ccedil;o Unit&aacute;rio</td><td align=center bgcolor=#CCCCCC>Pre&ccedil;o Total</td></tr><br /><br />"		
 for i = 0 to ubound(vquant)
 	htmlemail = htmlemail & "<tr><td align=center>" & vquant(i) &"</td><td align=center>" & vref(i) & "</td><td align=center>" & vdesc(i) & "</td><td align=center>" & vtam(i) & "</td><td align=center>" & vpag(i) & "</td><td align=center>" & vcor(i) & "</td><td align=center>" & vunit(i) & "</td><td align=center>" & vtotal(i) & "</td></tr>"
@@ -515,7 +515,7 @@ oMail.UserName = "hermes@catalogoshermes.com.br"
 oMail.PassWord = "hermes123"
 oMail.From = "hermes@catalogoshermes.com.br"
 oMail.FromName = nome
-oMail.AddAddress "hermes@catalogoshermes.com.br", "Cat·logos Hermes"
+oMail.AddAddress "hermes@catalogoshermes.com.br", "Cat√°logos Hermes"
 oMail.AddReplyTo email, nome
 oMail.Subject = "Passar Pedido"
 oMail.Body = htmlemail
@@ -537,7 +537,7 @@ if nome = "" then
 session("erro_nome") = "Digite seu nome!"
 Application("erroconfirm") = "erro"
 else
-session("erro_nome") = "Nome inv·lido!"
+session("erro_nome") = "Nome inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -545,10 +545,10 @@ session("erro_nome") = ""
 end if
 if endereco = "" or len(endereco) < 5 then
 if endereco = "" then
-session("erro_endereco") = "Digite o endereÁo!"
+session("erro_endereco") = "Digite o endere√ßo!"
 Application("erroconfirm") = "erro"
 else
-session("erro_endereco") = "EndereÁo inv·lido!"
+session("erro_endereco") = "Endere√ßo inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -559,7 +559,7 @@ if bairro = "" then
 session("erro_bairro") = "Digite o bairro!"
 Application("erroconfirm") = "erro"
 else
-session("erro_bairro") = "Bairro inv·lido!"
+session("erro_bairro") = "Bairro inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -570,7 +570,7 @@ if cep = "" then
 session("erro_cep") = "Digite o CEP!"
 Application("erroconfirm") = "erro"
 else
-session("erro_cep") = "CEP inv·lido!"
+session("erro_cep") = "CEP inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -581,7 +581,7 @@ if cidade = "" then
 session("erro_cidade") = "Digite a cidade!"
 Application("erroconfirm") = "erro"
 else
-session("erro_cidade") = "Cidade inv·lido!"
+session("erro_cidade") = "Cidade inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -589,10 +589,10 @@ session("erro_cidade") = ""
 end if
 if tel = "" or len(tel) < 10 or isnumeric(tel) = false then
 if tel = "" then
-session("erro_tel") = "Digite o n˙mero do seu telefone!"
+session("erro_tel") = "Digite o n√∫mero do seu telefone!"
 Application("erroconfirm") = "erro"
 else
-session("erro_tel") = "Telefone inv·lido!"
+session("erro_tel") = "Telefone inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -603,7 +603,7 @@ if email = "" then
 session("erro_email") = "Digite o e-mail!"
 Application("erroconfirm") = "erro"
 else
-session("erro_email") = "E-mail inv·lido!"
+session("erro_email") = "E-mail inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -615,7 +615,7 @@ end if
 htmlemail = htmlemail & "<font face=Verdana color=""#000000""><strong>Cadastramento do Site:</strong></font>"
 htmlemail = htmlemail & "<BR><BR><font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Nome:</strong></font><br>"
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & nome & "</strong></font><br>"
-htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>EndereÁo:</strong></font><br>"	
+htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Endere√ßo:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & endereco & "</strong></font><br>"
 htmlemail = htmlemail & "<font color=""#000000"" face=""Verdana, Arial"" size=""2""><strong>Bairro:</strong></font><br>"	
 htmlemail = htmlemail & "<font color=""#333333"" face=""Verdana, Arial"" size=""2""><strong>" & bairro & "</strong></font><br>"
@@ -638,9 +638,9 @@ oMail.UserName = "hermes@catalogoshermes.com.br"
 oMail.PassWord = "hermes123"
 oMail.From = "hermes@catalogoshermes.com.br"
 oMail.FromName = nome
-oMail.AddAddress "hermes@catalogoshermes.com.br", "Cat·logos Hermes"
+oMail.AddAddress "hermes@catalogoshermes.com.br", "Cat√°logos Hermes"
 oMail.AddReplyTo email, nome
-oMail.Subject = "Pedido de cat·logo"
+oMail.Subject = "Pedido de cat√°logo"
 oMail.Body = htmlemail
 oMail.IsHTML = True
 oMail.Send
@@ -660,7 +660,7 @@ if nome = "" then
 session("erro_nomec") = "Digite seu nome!"
 Application("erroconfirm") = "erro"
 else
-session("erro_nomec") = "Nome inv·lido!"
+session("erro_nomec") = "Nome inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -671,7 +671,7 @@ if cidade = "" then
 session("erro_cidadec") = "Digite a cidade!"
 Application("erroconfirm") = "erro"
 else
-session("erro_cidadec") = "Cidade inv·lido!"
+session("erro_cidadec") = "Cidade inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -679,10 +679,10 @@ session("erro_cidadec") = ""
 end if
 if tel = "" or len(tel) < 10 or isnumeric(tel) = false then
 if tel = "" then
-session("erro_telc") = "Digite o n˙mero do seu telefone!"
+session("erro_telc") = "Digite o n√∫mero do seu telefone!"
 Application("erroconfirm") = "erro"
 else
-session("erro_telc") = "Telefone inv·lido!"
+session("erro_telc") = "Telefone inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -693,7 +693,7 @@ if email = "" then
 session("erro_emailc") = "Digite o e-mail!"
 Application("erroconfirm") = "erro"
 else
-session("erro_emailc") = "E-mail inv·lido!"
+session("erro_emailc") = "E-mail inv√°lido!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -704,7 +704,7 @@ if mensagem = "" then
 session("erro_mensagemc") = "Digite a mensagem!"
 Application("erroconfirm") = "erro"
 else
-session("erro_mensagemc") = "A mensagem deve conter no mÌnimo 2 caractÈres!"
+session("erro_mensagemc") = "A mensagem deve conter no m√≠nimo 2 caract√©res!"
 Application("erroconfirm") = "erro"
 end if
 else
@@ -778,7 +778,7 @@ end if
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
 <head>
 <meta http-equiv="Content-Language" content="pt-br">
-<title>Cat·logos Hermes | Um shopping em suas m„os!</title>
+<title>Cat√°logos Hermes | Um shopping em suas m√£os!</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="revisit-after" content="1" />
@@ -881,8 +881,8 @@ function MascaraMoeda(objTextBox, SeparadorMilesimo, SeparadorDecimal, e){
     var aux = aux2 = '';
     var whichCode = (window.Event) ? e.which : e.keyCode;
     if (whichCode == 13) return true;
-    key = String.fromCharCode(whichCode); // Valor para o cÛdigo da Chave
-    if (strCheck.indexOf(key) == -1) return false; // Chave inv·lida
+    key = String.fromCharCode(whichCode); // Valor para o c√≥digo da Chave
+    if (strCheck.indexOf(key) == -1) return false; // Chave inv√°lida
     len = objTextBox.value.length;
     for(i = 0; i < len; i++)
         if ((objTextBox.value.charAt(i) != '0') && (objTextBox.value.charAt(i) != SeparadorDecimal)) break;
@@ -1055,7 +1055,7 @@ function poppvpv(){
 		</div>
 		<div class="middle">
 			<div class="body">
-				<!-- Tamanho da p·gina est· definido na class "bodycenter" -->
+				<!-- Tamanho da p√°gina est√° definido na class "bodycenter" -->
 				<%
 				select case request.querystring("hl")
 				case ""
@@ -1078,16 +1078,16 @@ function poppvpv(){
 							<li><a href="./?hl=comofunciona">Como Funcionamos</a></li>
 							<li><a href="./?hl=cadastre-se">Cadastre-se</a></li>
 							<li><a href="./?hl=passarpedido">Passe Seu Pedido</a></li>
-							<li><a href="./?hl=pecacatalogos">PeÁa Cat·logo Aqui</a></li>
+							<li><a href="./?hl=pecacatalogos">Pe√ßa Cat√°logo Aqui</a></li>
 							<li><a href="./?hl=datacampanha">Data das Campanhas</a></li>
-							<li><a href="./?hl=clubedascampeas">Clube das Campe„s</a></li>
+							<li><a href="./?hl=clubedascampeas">Clube das Campe√£s</a></li>
 							<li><a href="./?hl=clubeamizade">Clube da Amizade</a></li>
 							<li><a href="./?hl=pontovaipontovem">Ponto vai Ponto Vem</a></li>
 							<li><a href="./?hl=felicidadepremiada">Fidelidade Premiada</a></li>
 						</ul>
 					</div>
 					<div class="corpo">
-					<!-- InÌcio das p·ginas -->
+					<!-- In√≠cio das p√°ginas -->
 					<%
 					if not request.querystring("hl") <> "inicio" or not request.querystring("hl") <> "" then
 					if trim(Request.ServerVariables("server_name")) <> "catalogoshermes.com.br" or trim(Request.ServerVariables("server_port")) <> 80 then
@@ -1101,52 +1101,52 @@ function poppvpv(){
 					response.redirect("http://catalogoshermes.com.br/v2/"&vars&"")
 					end if
 					%>
-						<div class="bar"><div style="margin-left:10px;">Confira os Cat·logos On-line</div>
+						<div class="bar"><div style="margin-left:10px;">Confira os Cat√°logos On-line</div>
 						</div>
 						<div class="cat">
 							<div class="catalogoHermes left" style="width:133px;height:202px;float:left;z-index:9999;">
-								<a href="javascript:pophermes();"><img src="catalogo/hermes/paginas/001.jpg" width="123px" height="192px" style="margin:5px;" title="Clique para ver o cat·logo" alt="Clique para ver o cat·logo" border="0"></a>
+								<a href="javascript:pophermes();"><img src="catalogo/hermes/paginas/001.jpg" width="123px" height="192px" style="margin:5px;" title="Clique para ver o cat√°logo" alt="Clique para ver o cat√°logo" border="0"></a>
 							</div>
 							<div style="width:172px;height:182px;padding:5px;float:left;">
-								<b>Cat·logo Hermes<br>
+								<b>Cat√°logo Hermes<br>
 								<br>
 								<font size="1">
 								<span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline; float: none">
 								O</span></font><span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none"><font size="1"> 
-								maior e melhor cat·logo de variedades do Brasil.
+								maior e melhor cat√°logo de variedades do Brasil.
 								</font></span></b>
 								<span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none; font-weight: 700">
 								<font size="1">Mais de 10 Mil itens diferentes</font></span><span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline; float: none"><font size="1"><br style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(188, 35, 32)">
 								</font>
 								<span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none; font-weight: 700">
-								<font size="1">Cerca de 1,3 Milhıes de 
+								<font size="1">Cerca de 1,3 Milh√µes de 
 								exemplares.</font></span><font size="1"><br style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(188, 35, 32)">
 								</font>
 								<span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none; font-weight: 700">
 								<font size="1">Uma ampla linha de produtos: moda 
 								feminina, masculina e infantil, lingerie, 
 								artigos de cama, mesa e banho, utilidades 
-								domÈsticas, cosmÈticos, calÁados femininos e 
-								masculinos, livros, DVDs e v·rios outros.</font></span></span></div>
+								dom√©sticas, cosm√©ticos, cal√ßados femininos e 
+								masculinos, livros, DVDs e v√°rios outros.</font></span></span></div>
 							<div style="width:133px;height:202px;float:left;">
 								<a href="javascript:popbella();">
-								<img src="catalogo/bella/paginas/001.jpg" width="123px" height="192px" style="margin:5px;" title="Clique para ver o cat·logo" alt="Clique para ver o cat·logo" border="0"></a>
+								<img src="catalogo/bella/paginas/001.jpg" width="123px" height="192px" style="margin:5px;" title="Clique para ver o cat√°logo" alt="Clique para ver o cat√°logo" border="0"></a>
 							</div>
 							<div style="width:172px;height:182px;padding:5px;float:left;">
-								<b>Cat·logo Bella</b><br>
+								<b>Cat√°logo Bella</b><br>
 								<br>
 								<b>
 								<span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
-								<font size="1">O Cat·logo de CosmÈticos e 
-								Bijuterias da Hermes. Quase um milh„o de 
-								exemplares todo mÍs.</font></span><font size="1"><br style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+								<font size="1">O Cat√°logo de Cosm√©ticos e 
+								Bijuterias da Hermes. Quase um milh√£o de 
+								exemplares todo m√™s.</font></span><font size="1"><br style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
 								</font>
 								<span style="color: rgb(247, 247, 248); font-family: Arial, Verdana; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; display: inline !important; float: none">
 								<font size="1">Uma ampla linha de produtos: 
-								maquiagem, cremes para o corpo, m„os e pÈs, 
+								maquiagem, cremes para o corpo, m√£os e p√©s, 
 								cremes antiidades, tratamento para cabelos, 
-								shampoos e condicionadores, fragr‚ncias, 
-								sabonetes e v·rios outros.</font></span></b></div>
+								shampoos e condicionadores, fragr√¢ncias, 
+								sabonetes e v√°rios outros.</font></span></b></div>
 						</div>
 						<div class="pvpv">
 								<a href="javascript:poppvpv();">
@@ -1161,11 +1161,11 @@ function poppvpv(){
 							<p style="text-align: justify">
 							<font color="#F7CA01"><b>Olha que legal!!!<br><br>
 							</b></font><font style="font-size: 9pt"><b>Formas de Pagamento<br>
-							</b>A consultora Hermes ter· um prazo de 12 ‡ 14 dias 
-							para pagar o boleto (CREDHERMES), apÛs a entrega da caixa. Ou ainda, 
-							a consultora Hermes ou a cliente poder„o pagar 
-							parceladamente em atÈ 10x sem juros, no seu cart„o 
-							de crÈdito.</font></div>
+							</b>A consultora Hermes ter√° um prazo de 12 √† 14 dias 
+							para pagar o boleto (CREDHERMES), ap√≥s a entrega da caixa. Ou ainda, 
+							a consultora Hermes ou a cliente poder√£o pagar 
+							parceladamente em at√© 10x sem juros, no seu cart√£o 
+							de cr√©dito.</font></div>
 						</div>
 					<%end if%>
 					<%
@@ -1185,28 +1185,28 @@ function poppvpv(){
                 <img border="0" src="imagens/hermes.png" align="left" alt="Sede da Hermes S/A" title="Sede da Hermes S/A"><h1 align="justify">
 				A empresa Hermes</h1>
                 <p align="justify">Fundada em 1942, e sediada na cidade do Rio 
-				de Janeiro, a Hermes S/A, È a maior empresa brasileira de vendas 
-				por cat·logos de variedades, com mais de 10 milhıes de clientes 
-				em todo o Brasil. Possui uma grande estrutura de DistribuiÁ„o e 
-				Atendimento, com 32.000m≤ de ·rea construÌda e, capacidade para 
+				de Janeiro, a Hermes S/A, √© a maior empresa brasileira de vendas 
+				por cat√°logos de variedades, com mais de 10 milh√µes de clientes 
+				em todo o Brasil. Possui uma grande estrutura de Distribui√ß√£o e 
+				Atendimento, com 32.000m¬≤ de √°rea constru√≠da e, capacidade para 
 				atender cerca de 40 mil pedidos por dia.<br>
                 <br>
-              	Atua atravÈs de diversos canais de vendas:<br>
-              	Por meio dos cat·logos Hermes e Bella;<br>
+              	Atua atrav√©s de diversos canais de vendas:<br>
+              	Por meio dos cat√°logos Hermes e Bella;<br>
               	Pelo site: <a href="#">www.catalogoshermes.com.br</a><br><br>
                 <br>
               	Atualmente a empresa oferece uma grande variedade de produtos, 
-				como utilidades domÈsticas, confecÁıes masculina,&nbsp; feminina 
-				e infantil, linha Ìntima, calÁados, artigos de cama, mesa e 
-				banho, cosmÈticos, eletÙnicos, eletrodomÈsticos, 
-				eletroport·teis, perfumaria, telefonia e celulares, cine e foto 
-				e v·rios outros. S„o mais de 30 mil itens comercializados 
-				diariamente. Com a miss„o de proporcionar comodidade e bom 
+				como utilidades dom√©sticas, confec√ß√µes masculina,&nbsp; feminina 
+				e infantil, linha √≠ntima, cal√ßados, artigos de cama, mesa e 
+				banho, cosm√©ticos, elet√¥nicos, eletrodom√©sticos, 
+				eletroport√°teis, perfumaria, telefonia e celulares, cine e foto 
+				e v√°rios outros. S√£o mais de 30 mil itens comercializados 
+				diariamente. Com a miss√£o de proporcionar comodidade e bom 
 				atendimento, aliados ao crescimento, desenvolvimento e 
 				produtividade, atua com responsabiliddde social, e possui mais 
-				de 1500 funcion·rios treinados e especializados.<br /></p><br />
-                <h1 align="justify">Cat·logos Hermes</h1>
-                <p align="justify">DescriÁ„o</p>
+				de 1500 funcion√°rios treinados e especializados.<br /></p><br />
+                <h1 align="justify">Cat√°logos Hermes</h1>
+                <p align="justify">Descri√ß√£o</p>
                 <p align="justify">&nbsp;</p></div>
                     <%end if%>
 					<%
@@ -1225,10 +1225,10 @@ function poppvpv(){
 						<div class="bar"><div style="margin-left:10px;">Cadastre-se</div>
 						</div>
 						<div id="text_int" style="margin-top:10px;margin-bottom:10px;background:#A81716;">
-                Preencha o formul·rio abaixo, para 
-				vocÍ se cadastrar e comeÁar a revender os produtos HERMES e 
+                Preencha o formul√°rio abaixo, para 
+				voc√™ se cadastrar e come√ßar a revender os produtos HERMES e 
 				BELLA. 
-                VocÍ tambÈm poder· enviar o formul·rio impresso entregando 
+                Voc√™ tamb√©m poder√° enviar o formul√°rio impresso entregando 
 				diretamente em nossa loja. Para imprimir a ficha de cadastro,<b>
                 <a href="?"><font color="#FFFFFF">
 				<span style="text-decoration: none">clique aqui</span></font></a></b>.</div>
@@ -1238,10 +1238,10 @@ function poppvpv(){
                   <tr>
                     <td width="768" height="30" colspan="3">
                     <div id="text_int"><b><font color="#F8D000">Obs.:</font></b><br>
-                      	- Todos os campos marcados com <font color="#F8D000">*</font> s„o obrigatÛrios.<br>
+                      	- Todos os campos marcados com <font color="#F8D000">*</font> s√£o obrigat√≥rios.<br>
                       	- Para efetuar o preenchimento dos campos, CEP, 
 						DDD+Telefone, DDD+Celular, CPF, Identidade, digite somente os 
-						n˙meros, sem pontuaÁ„o ou espaÁos.<i><br>
+						n√∫meros, sem pontua√ß√£o ou espa√ßos.<i><br>
 &nbsp;</i></div><br /></td>
                   </tr>
                   <tr>
@@ -1255,10 +1255,10 @@ function poppvpv(){
                   </tr>
                   <tr>
                     <td width="192" height="40">
-                    <div id="text_int">EndereÁo: <b><font color="#F8D000">*</font></b></div></td>
+                    <div id="text_int">Endere√ßo: <b><font color="#F8D000">*</font></b></div></td>
                     <td width="5" height="40">&nbsp;</td>
                     <td width="570" height="40" align="left">
-              <input name="endereco" type="text" class="input1" size="42" erro="Seu EndereÁo" onkeyup="javascript:alta(this);" value="<%=endereco%>">
+              <input name="endereco" type="text" class="input1" size="42" erro="Seu Endere√ßo" onkeyup="javascript:alta(this);" value="<%=endereco%>">
               <font color="#F8D000" size="2"><b><%="  "&session("erro_endereco")%></b></font>
               </td>
                   </tr>
@@ -1306,52 +1306,52 @@ function poppvpv(){
 ACRE
 </option><option value="ALAGOAS" <%if estado = "ALAGOAS" then%>selected="selected"<%end if%>>
 ALAGOAS
-</option><option value="AMAP¡" <%if estado = "AMAP¡" then%>selected="selected"<%end if%>>
-AMAP¡
+</option><option value="AMAP√Å" <%if estado = "AMAP√Å" then%>selected="selected"<%end if%>>
+AMAP√Å
 </option><option value="AMAZONAS" <%if estado = "AMAZONAS" then%>selected="selected"<%end if%>>
 AMAZONAS
 </option><option value="BAHIA" <%if estado = "BAHIA" then%>selected="selected"<%end if%>>
 BAHIA
-</option><option value="CEAR¡" <%if estado = "CEAR¡" then%>selected="selected"<%end if%>>
-CEAR¡
+</option><option value="CEAR√Å" <%if estado = "CEAR√Å" then%>selected="selected"<%end if%>>
+CEAR√Å
 </option><option value="DISTRITO FEDERAL" <%if estado = "DISTRITO FEDERAL" then%>selected="selected"<%end if%>>
 DISTRITO FEDERAL
-</option><option value="ESPÕRITO SANTO" <%if estado = "ESPÕRITO SANTO" then%>selected="selected"<%end if%>>
-ESPÕRITO SANTO
-</option><option value="GOI¡S" <%if estado = "GOI¡S" then%>selected="selected"<%end if%>>
-GOI¡S
-</option><option value="MARANH√O" <%if estado = "MARANH√O" then%>selected="selected"<%end if%>>
-MARANH√O
+</option><option value="ESP√çRITO SANTO" <%if estado = "ESP√çRITO SANTO" then%>selected="selected"<%end if%>>
+ESP√çRITO SANTO
+</option><option value="GOI√ÅS" <%if estado = "GOI√ÅS" then%>selected="selected"<%end if%>>
+GOI√ÅS
+</option><option value="MARANH√ÉO" <%if estado = "MARANH√ÉO" then%>selected="selected"<%end if%>>
+MARANH√ÉO
 </option><option value="MATO GROSSO" <%if estado = "MATO GROSSO" then%>selected="selected"<%end if%>>
 MATO GROSSO
 </option><option value="MATO GROSSO DO SUL" <%if estado = "MATO GROSSO DO SUL" then%>selected="selected"<%end if%>>
 MATO GROSSO DO SUL
 </option><option value="MINAS GERAIS" <%if estado = "MINAS GERAIS" then%>selected="selected"<%end if%>>
 MINAS GERAIS
-</option><option value="PAR¡" <%if estado = "PAR¡" then%>selected="selected"<%end if%>>
-PAR¡
-</option><option value="PARAÕBA" <%if estado = "PARAÕBA" then%>selected="selected"<%end if%>>
-PARAÕBA
-</option><option value="PARAN¡" <%if estado = "PARAN¡" then%>selected="selected"<%end if%>>
-PARAN¡
+</option><option value="PAR√Å" <%if estado = "PAR√Å" then%>selected="selected"<%end if%>>
+PAR√Å
+</option><option value="PARA√çBA" <%if estado = "PARA√çBA" then%>selected="selected"<%end if%>>
+PARA√çBA
+</option><option value="PARAN√Å" <%if estado = "PARAN√Å" then%>selected="selected"<%end if%>>
+PARAN√Å
 </option><option value="PERNAMBUCO" <%if estado = "PERNAMBUCO" then%>selected="selected"<%end if%>>
 PERNAMBUCO
-</option><option value="PIAUÕ" <%if estado = "PIAUÕ" then%>selected="selected"<%end if%>>
-PIAUÕ
+</option><option value="PIAU√ç" <%if estado = "PIAU√ç" then%>selected="selected"<%end if%>>
+PIAU√ç
 </option><option value="RIO DE JANEIRO" <%if estado = "RIO DE JANEIRO" or estado = "" then%>selected="selected"<%end if%>>
 RIO DE JANEIRO
 </option><option value="RIO GRANDE DO NORTE" <%if estado = "RIO GRANDE DO NORTE" then%>selected="selected"<%end if%>>
 RIO GRANDE DO NORTE
 </option><option value="RIO GRANDE DO SUL" <%if estado = "RIO GRANDE DO SUL" then%>selected="selected"<%end if%>>
 RIO GRANDE DO SUL
-</option><option value="ROND‘NIA" <%if estado = "ROND‘NIA" then%>selected="selected"<%end if%>>
-ROND‘NIA
+</option><option value="ROND√îNIA" <%if estado = "ROND√îNIA" then%>selected="selected"<%end if%>>
+ROND√îNIA
 </option><option value="RORAIMA" <%if estado = "RORAIMA" then%>selected="selected"<%end if%>>
 RORAIMA
 </option><option value="SANTA CATARINA" <%if estado = "SANTA CATARINA" then%>selected="selected"<%end if%>>
 SANTA CATARINA
-</option><option value="S√O PAULO" <%if estado = "S√O PAULO" then%>selected="selected"<%end if%>>
-S√O PAULO
+</option><option value="S√ÉO PAULO" <%if estado = "S√ÉO PAULO" then%>selected="selected"<%end if%>>
+S√ÉO PAULO
 </option><option value="SERGIPE" SERGIPE>SERGIPE
 </option><option value="TOCANTINS" <%if estado = "TOCANTINS" then%>selected="selected"<%end if%>>
 TOCANTINS
@@ -1393,7 +1393,7 @@ TOCANTINS
               </td>
                   </tr>
                   <tr>
-                    <td width="192" height="40"><div id="text_int">Estado CivÌl:</div></td>
+                    <td width="192" height="40"><div id="text_int">Estado Civ√≠l:</div></td>
                     <td width="5" height="40">&nbsp;</td>
                     <td width="570" height="40" align="left">
               
@@ -1404,8 +1404,8 @@ TOCANTINS
 				CASADO(A)</option>
                 <option value="4 - DESQUITADO(A)/DIVORCIADO(A)" <%if civil = "4 - DESQUITADO(A)/DIVORCIADO(A)" then%>selected="selected"<%end if%>>
 				DESQUITADO(A)/DIVORCIADO(A)</option>
-                <option value="3 - VI⁄VO(A)" <%if civil = "3 - VI⁄VO(A)" then%>selected="selected"<%end if%>>
-				VI⁄VO(A)</option>
+                <option value="3 - VI√öVO(A)" <%if civil = "3 - VI√öVO(A)" then%>selected="selected"<%end if%>>
+				VI√öVO(A)</option>
               </select></td>
                   </tr>
                   <tr>
@@ -1435,26 +1435,26 @@ TOCANTINS
 </td>
                   </tr>
                   <tr>
-                    <td width="192" height="40"><div id="text_int">”rg„o Exp.:</div></td>
+                    <td width="192" height="40"><div id="text_int">√ìrg√£o Exp.:</div></td>
                     <td width="5" height="40">&nbsp;</td>
                     <td width="570" height="40" align="left">
-<input name="orgao" type="text" class="form" id="orgao" onkeyup="javascript:alta(this);" size="10" maxlength="10" erro="Seu ”rg„o Expedidor" value="<%=orgao%>"></td>
+<input name="orgao" type="text" class="form" id="orgao" onkeyup="javascript:alta(this);" size="10" maxlength="10" erro="Seu √ìrg√£o Expedidor" value="<%=orgao%>"></td>
                   </tr>
                   <tr>
                     <td width="192" height="40"><div id="text_int">Tempo de 
-						ResidÍncia:</div></td>
+						Resid√™ncia:</div></td>
                     <td width="5" height="40">&nbsp;</td>
                     <td width="570" height="40" align="left"> 
-<input name="tresidencia" type="text" class="form" id="tresidencia" size="14" erro="Seu Tempo de ResidÍncia" onkeyup="javascript:alta(this);" value="<%=tresidencia%>"></td>
+<input name="tresidencia" type="text" class="form" id="tresidencia" size="14" erro="Seu Tempo de Resid√™ncia" onkeyup="javascript:alta(this);" value="<%=tresidencia%>"></td>
                   </tr>
                   <tr>
-                    <td width="192" height="40"><div id="text_int">SituaÁ„o da 
-						ResidÍncia:</div></td>
+                    <td width="192" height="40"><div id="text_int">Situa√ß√£o da 
+						Resid√™ncia:</div></td>
                     <td width="5" height="40">&nbsp;</td>
                     <td width="570" height="40" align="left">
 <select name="sresidencia" class="form" id="sresidencia">
-  <option value="1 - PR”PRIA" <%if sresidencia = "1 - PR”PRIA" then%>selected="selected"<%end if%>>
-	PR”PRIA</option>
+  <option value="1 - PR√ìPRIA" <%if sresidencia = "1 - PR√ìPRIA" then%>selected="selected"<%end if%>>
+	PR√ìPRIA</option>
   <option value="2 - ALUGADA" <%if sresidencia = "2 - ALUGADA" then%>selected="selected"<%end if%>>
 	ALUGADA</option>
   <option value="3 - PAIS" <%if sresidencia = "3 - PAIS" then%>selected="selected"<%end if%>>
@@ -1466,14 +1466,14 @@ TOCANTINS
 </select></td>
                   </tr>
                   <tr>
-                    <td width="192" height="40"><div id="text_int">Nome da M„e:</div></td>
+                    <td width="192" height="40"><div id="text_int">Nome da M√£e:</div></td>
                     <td width="5" height="40">&nbsp;</td>
                     <td width="570" height="40" align="left"> 
 <input name="nmae" type="text" class="form" id="nmae" size="42" onkeyup="javascript:alta(this);" value="<%=nmae%>"></td>
                   </tr>
                   <tr>
                     <td width="192" height="40"><div id="text_int">Data de 
-						Nascimento da M„e:</div></td>
+						Nascimento da M√£e:</div></td>
                     <td width="5" height="40">&nbsp;</td>
                     <td width="570" height="40" align="left"> 
 <input name="dmae" type="text" class="form" id="dmae" onkeyup="javascript:alta(this);" size="10" maxlength="10" onkeypress="return MaskData(this, event)" value="<%=dmae%>"></td>
@@ -1571,22 +1571,22 @@ TOCANTINS
 					end if
 					%>
 <div id="text_int"><h1>
-                FaÁa o seu pedido</h1>
-                AtravÈs do formul·rio abaixo vocÍ poder· enviar o seu pedido. 
-				Basta preenchÍ-lo corretamente, vocÍ ter· todas as informaÁıes 
-				necess·rias para efetuar os seus pedidos de forma mais r·pida.<br>
+                Fa√ßa o seu pedido</h1>
+                Atrav√©s do formul√°rio abaixo voc√™ poder√° enviar o seu pedido. 
+				Basta preench√™-lo corretamente, voc√™ ter√° todas as informa√ß√µes 
+				necess√°rias para efetuar os seus pedidos de forma mais r√°pida.<br>
                 <br>
-                ApÛs preencher os seus pedidos, clique em <b>INFORMA«’ES DE 
+                Ap√≥s preencher os seus pedidos, clique em <b>INFORMA√á√ïES DE 
 				PAGAMENTO</b>.<br>
                 <br>
-                Preencha os campos: <b>Nome, E-mail, EndereÁo, Bairro, Cidade, 
-				Telefone com um n˙mero atualizado e o seu CÛdigo de consultora 
-				se tiver</b>. Depois Preencha as opÁıes de Pagamento e Enviar.<br>
+                Preencha os campos: <b>Nome, E-mail, Endere√ßo, Bairro, Cidade, 
+				Telefone com um n√∫mero atualizado e o seu C√≥digo de consultora 
+				se tiver</b>. Depois Preencha as op√ß√µes de Pagamento e Enviar.<br>
 &nbsp;</div>
 					<%
 					end if
 					%>                    
-                    <!-- Fim das p·ginas -->
+                    <!-- Fim das p√°ginas -->
 					</div>
 				</div>
 			</div>
@@ -1600,13 +1600,13 @@ TOCANTINS
 				<b><br>
 				<br>
 				Nossa Loja</b><br>
-				Fica atr·s da Casa &amp; VÌdeo, na galeria ao lado - Primeira loja.<br>
-				Rua: Gil de GÛis, 103 loja n.o 34 - Centro - Campos dos Goytacazes - Rio 
+				Fica atr√°s da Casa &amp; V√≠deo, na galeria ao lado - Primeira loja.<br>
+				Rua: Gil de G√≥is, 103 loja n.o 34 - Centro - Campos dos Goytacazes - Rio 
 				de Janeiro.</font><font color="#A02C27" style="font-family: Arial, Verdana; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><br>
 				<br>
 				</font>
 				<b style="color: rgb(102, 102, 102); font-family: Arial, Verdana; font-size: 13px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
-				<font color="#8A0608">Copyright&nbsp;<%=year(now)%> © Cat·logo Hermes. Todos os 
+				<font color="#8A0608">Copyright&nbsp;<%=year(now)%> ¬© Cat√°logo Hermes. Todos os 
 				direitos reservados.</font></b>
 				<div class="ssl"><%=Application("chacessos")%></div>
 			</div>
